@@ -1,4 +1,4 @@
-package com.tomaszfigat.politicsForDummies.mapper;
+package com.tomaszfigat.politicsForDummies.DTO;
 
 import lombok.Builder;
 import lombok.Data;

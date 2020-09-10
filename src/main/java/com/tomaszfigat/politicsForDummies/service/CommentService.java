@@ -1,20 +1,23 @@
 package com.tomaszfigat.politicsForDummies.service;
 
 import com.tomaszfigat.politicsForDummies.entity.Comment;
-import com.tomaszfigat.politicsForDummies.mapper.CommentDTO;
 import com.tomaszfigat.politicsForDummies.repository.CommentRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
 public class CommentService {
 
     private CommentRepository commentRepository;
+
+    @Transactional
+    public List<Comment> findAllByPostId(Long id){
+        return commentRepository.findAllByPostId(id);
+    }
 //    private CommentMapper commentMapper;
 //
 //    @Transactional

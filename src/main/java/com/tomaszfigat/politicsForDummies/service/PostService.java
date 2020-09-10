@@ -20,8 +20,8 @@ public class PostService {
     }
 
 //    @Transactional
-//    public PostDTO findById(Long theId) {
-//        return postMapper.map(postRepository.findById(theId).orElseThrow());
+//    public Post findById(Long theId) {
+//        return postRepository.findById(theId).orElseThrow();
 //    }
 
     @Transactional

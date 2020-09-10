@@ -2,6 +2,7 @@ CREATE TABLE comment (
     text text NULL,
     post_id int NOT NULL,
     date timestamp NOT NULL,
+    user_id int NOT NULL,
     id int NOT NULL AUTO_INCREMENT,
     CONSTRAINT comment_pk PRIMARY KEY (id)
 );
@@ -35,4 +36,6 @@ ALTER TABLE comment ADD CONSTRAINT comment_post FOREIGN KEY comment_post (post_i
 ALTER TABLE post ADD CONSTRAINT post_user FOREIGN KEY post_user (user_id)
     REFERENCES user (id);
 
+ALTER TABLE comment ADD CONSTRAINT comment_user FOREIGN KEY comment_user (user_id)
+    REFERENCES user (id);
 -- End of file.

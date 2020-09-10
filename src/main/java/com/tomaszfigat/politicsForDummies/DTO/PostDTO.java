@@ -1,4 +1,4 @@
-package com.tomaszfigat.politicsForDummies.mapper;
+package com.tomaszfigat.politicsForDummies.DTO;
 
 import com.tomaszfigat.politicsForDummies.entity.User;
 import lombok.Builder;
@@ -15,7 +15,7 @@ public class PostDTO {
 
     private String text;
     private String title;
-//    private UserDTO userDTO;
+    private UserDTO userDTO;
     private LocalDateTime date;
 
 

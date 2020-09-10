@@ -1,4 +1,4 @@
-package com.tomaszfigat.politicsForDummies.mapper;
+package com.tomaszfigat.politicsForDummies.DTO;
 
 
 import lombok.Builder;
@@ -11,7 +11,8 @@ import java.time.LocalDateTime;
 @Getter
 public class CommentDTO {
 
-    private Long id;
+
     private LocalDateTime date;
     private String text;
+    private UserDTO userDTO;
 }

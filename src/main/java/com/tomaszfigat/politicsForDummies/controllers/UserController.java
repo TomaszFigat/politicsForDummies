@@ -1,12 +1,13 @@
 package com.tomaszfigat.politicsForDummies.controllers;
 
-import com.tomaszfigat.politicsForDummies.mapper.UserDTO;
+import com.tomaszfigat.politicsForDummies.DTO.UserDTO;
 import com.tomaszfigat.politicsForDummies.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("users")
@@ -18,11 +19,14 @@ public class UserController {
 
     private final UserService userService;
 //    private final UserMapper userMapper;
-//
-//
+////
+////
 //    @GetMapping()
 //    public List<UserDTO> geAllUser() {
-//        return userService.findAll();
+//        return userService.findAll().stream()
+//                .map(UserMapper::map)
+//                .collect(Collectors.toList());
+//
 //    }
 ////
 //    @GetMapping("/{theId}")

@@ -1,6 +1,9 @@
 package com.tomaszfigat.politicsForDummies.mapper;
 
+import com.tomaszfigat.politicsForDummies.DTO.PostDTO;
 import com.tomaszfigat.politicsForDummies.entity.Post;
+import org.springframework.stereotype.Component;
+
 
 public class PostMapper {
 
@@ -8,7 +11,7 @@ public class PostMapper {
         return PostDTO.builder()
                 .title(post.getTitle())
                 .text(post.getText())
-                //TODO user mapper
+                .userDTO(UserMapper.map(post.getUser()))
                 .date(post.getDate())
                 .build();
 

@@ -30,5 +30,9 @@ public class Comment {
     @JoinColumn(name="post_id")
     private Post post;
 
+    @OneToOne
+    @JoinColumn(name="user_id")
+    private User user;
+
 
 }
