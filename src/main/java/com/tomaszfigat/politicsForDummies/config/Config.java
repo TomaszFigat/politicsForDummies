@@ -20,12 +20,11 @@ import java.util.List;
 
 //import static java.util.Collections.singletonList;
 //import springfox.documentation.swagger2.annotations.EnableSwagger2;
-//import springfox.documentation.swagger2.annotations.EnableSwagger2;
+// springfox.documentation.swagger2.annotations.EnableSwagger2;
 //import springfox.documentation.swagger2.mappers.ModelMapper;
 
 
 @Configuration
-//@EnableSwagger2
 public class Config {
 
 }
