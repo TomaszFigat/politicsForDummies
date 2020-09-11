@@ -22,8 +22,11 @@ public class User {
     @Column(name = "id", updatable = false, nullable = false)
     private Long id;
 
-    @Column(name="name")
-    private String name;
+    @Column(name="user_name")
+    private String userName;
+
+    @Column(name="first_name")
+    private String firstName;
 
     @Column(name="password")
     private String password;

@@ -9,7 +9,8 @@ public class UserMapper {
 
     public static UserDTO map(User user) {
         return UserDTO.builder()
-                .name(user.getName())
+                .userName(user.getUserName())
+                .firstName(user.getFirstName())
                 .lastName(user.getLastName())
                 .email(user.getEmail())
                 .build();

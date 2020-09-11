@@ -1,7 +1,7 @@
-insert into user(first_name,last_name,email,password,id) values ('Piotr','Ducki','duc@mail.com','123',1);
-insert into user(first_name,last_name,email,password,id) values ('Piotr','Skoupy','skoupy@mail.com','123',2);
-insert into user(first_name,last_name,email,password,id) values ('Tomasz','Figat','figat@mail.com','123',3);
-insert into user(first_name,last_name,email,password,id) values ('Tadeusz','Norek','norek@mail.com','123',4);
+insert into user(user_name,first_name,last_name,email,password,id) values ('Ducek','Piotr','Ducki','duc@mail.com','123',1);
+insert into user(user_name,first_name,last_name,email,password,id) values ('Czech','Piotr','Skoupy','skoupy@mail.com','123',2);
+insert into user(user_name,first_name,last_name,email,password,id) values ('Figo','Tomasz','Figat','figat@mail.com','123',3);
+insert into user(user_name,first_name,last_name,email,password,id) values ('Tadzik','Tadeusz','Norek','norek@mail.com','123',4);
 
 insert into post(text,id,user_id,title,date) values ('jakis tekst', 1, 1,'pierwszy','2019-09-01T00:00');
 insert into post(text,id,user_id,title,date) values ('jakis tekst deuig', 2, 1,'drugi','2019-09-01T00:00');

@@ -8,7 +8,8 @@ import lombok.Getter;
 @Getter
 public class UserDTO {
 
-    private String name;
+    private String userName;
+    private String firstName;
     private String lastName;
     private String email;
    // private String password;
